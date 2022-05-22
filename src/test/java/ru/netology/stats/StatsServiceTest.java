@@ -22,7 +22,7 @@ public class StatsServiceTest {
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int actual = manager.maxSales(sales);
-        int expected = 9;
+        int expected = 8;
         Assertions.assertEquals(expected,actual);
     }
 
@@ -36,30 +36,30 @@ public class StatsServiceTest {
     }
 
     @Test
-    public void mdlsalesmonth(){
+    public void midSalesMonth(){
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.mdlsalesmonth(sales);
-        int expected = 180;
+        int actual = manager.midSalesMonth(sales);
+        int expected = 15;
         Assertions.assertEquals(expected,actual);
 
     }
 
     @Test
-    public void monthminsales(){
+    public void monthMinSales(){
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.monthminsales(sales);
-        int expected = 12;
+        int actual = manager.monthMinSales(sales);
+        int expected = 5;
         Assertions.assertEquals(expected,actual);
     }
 
     @Test
-    public void mounthmaxsales(){
+    public void mounthMaxSales(){
         StatsService manager = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int actual = manager.mounthmaxsales(sales);
-        int expected = 1;
+        int actual = manager.mounthMaxSales(sales);
+        int expected = 5;
         Assertions.assertEquals(expected,actual);
 
     }
